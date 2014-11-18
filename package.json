@@ -1,0 +1,42 @@
+{
+  "name": "co-author",
+  "version": "0.0.1",
+  "description": "CouchDB multi author test",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production grunt build",
+    "start": "grunt start"
+  },
+  "author": {
+    "name": "Andrey Koperskiy",
+    "email": "a.koperskiy@sovsport.ru",
+    "url": "https://github.com/teux"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "*",
+    "blob-util": "*",
+    "chai": "*",
+    "chai-as-promised": "*",
+    "css-loader": "*",
+    "expose-loader": "*",
+    "extend": "^2.0.0",
+    "extract-text-webpack-plugin": "*",
+    "file-loader": "*",
+    "font-awesome": "*",
+    "grunt": "^0.4.5",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-webpack": "^1.0.8",
+    "imports-loader": "*",
+    "jquery": "^2.1.1",
+    "less-loader": "*",
+    "mocha": "*",
+    "ng-annotate-webpack-plugin": "^0.1.2",
+    "ng-cache-loader": "~0.0.1",
+    "style-loader": "*",
+    "url-loader": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  }
+}

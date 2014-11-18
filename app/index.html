@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+    </style>
+</head>
+<body ng-cloak>
+<div id="main" class="main-content" ng-controller="AppController">
+    <h4>Эту страничку надо открыть одновременно в двух браузерах</h4>
+    <div>
+        <a ng-click="addDoc()" href="#">Добавить</a> |
+        <a ng-click="removeDocs()" href="#">Удалить все</a>
+        <br/>
+        Кол-во: {{itemCount}}
+        <ol>
+            <li pouch-repeat="doc in docs order by timestamp">
+                Unix date: {{doc.timestamp}} -
+                <a href="#" ng-click="removeDoc(doc)">удалить</a> или
+                <take-photo doc="doc" modify="modifyDoc(doc)"></take-photo>
+                <show-photo doc="doc" url="getPhotoUrl(doc)"></show-photo>
+            </li>
+        </ol>
+    </div>
+    <a href="https://github.com/teux/couchdb-lab" style="color: silver;">исходный код</a>
+</div>
+<script src="/couch/index.js"></script>
+</body>
+</html>
